@@ -6,4 +6,4 @@
 
 - The alias box only pops up when it is in focus state
 
-![details](https://raw.githubusercontent.com/browneyedsoul/RemNote-AliasCloud/main/public/details.gif)
+![details](https://raw.githubusercontent.com/browneyedsoul/RemNote-AliasCloud/main/public/details.gif?token=GHSAT0AAAAAABTUKLUBU5CSJCGOHD46RQOIY6IJXRA)
