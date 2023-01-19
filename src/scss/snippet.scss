@@ -56,6 +56,9 @@
         z-index: 1;
         opacity: 0.9;
         display: none;
+        .absolute.pointer-events-none.select-none {
+           color: transparent;
+        }
         &:has(span.rem-container--focused) {
             display: block;
         }
@@ -85,6 +88,18 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    #hierarchy-editor {
+        > div {
+            > .rn-editor-container {
+                > div {
+                    .rn-editor-container:nth-of-type(2) {
+                        display: flex;
+                        position: relative;
                     }
                 }
             }
