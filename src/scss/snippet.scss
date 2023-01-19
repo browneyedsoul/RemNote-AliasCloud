@@ -8,7 +8,32 @@
     --alias-bg: #ECECEC;
     --alias-bg-dark: #252525;
 }
-
+@keyframes cloud {
+  0% {
+    transform: scale(0.5);
+  }
+  25% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.025);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @mixin alias(
     $ref-text,
     $alias-bg,
@@ -19,6 +44,7 @@
     }
     .tree-node--parent:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
         display: block;
+        animation: cloud 0.25s;
     }
     [data-rem-container-property~="aliases"] {
         border-radius: 4px;
@@ -32,6 +58,7 @@
         display: none;
         &:has(span.rem-container--focused) {
             display: block;
+            animation: cloud 0.25s;
         }
 
         [data-rem-property~="aliases"] {
