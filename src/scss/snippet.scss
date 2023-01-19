@@ -58,7 +58,6 @@
         display: none;
         &:has(span.rem-container--focused) {
             display: block;
-            animation: cloud 0.25s;
         }
 
         [data-rem-property~="aliases"] {
