@@ -97,7 +97,7 @@
         > div {
             > .rn-editor-container {
                 > div {
-                    .rn-editor-container:nth-of-type(2) {
+                    > .rn-editor-container:nth-of-type(2) {
                         display: flex;
                         position: relative;
                     }
