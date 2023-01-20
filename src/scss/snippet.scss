@@ -44,7 +44,7 @@
     }
     .tree-node--parent:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
         display: block;
-        animation: cloud 0.25s;
+        animation: cloud 0.125s;
     }
     [data-rem-container-property~="aliases"] {
         border-radius: 4px;
