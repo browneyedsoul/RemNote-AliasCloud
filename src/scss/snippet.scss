@@ -99,6 +99,7 @@
                 > div {
                     > .rn-editor-container:nth-of-type(2) {
                         display: flex;
+                        flex-direction: column;
                         position: relative;
                     }
                 }
