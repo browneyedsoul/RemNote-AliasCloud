@@ -78,6 +78,7 @@
         }
 
         > .tree-node--children {
+            padding: 0 0.7rem 0.7rem 0.7rem;
             [data-rem-container-tags~="list-item"] {
                 .tree-node--parent {
                     [data-rem-tags~="list-item"] {
