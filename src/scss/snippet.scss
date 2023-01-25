@@ -98,7 +98,7 @@
         > div {
             > .rn-editor-container {
                 > div {
-                    > .rn-editor-container:nth-of-type(2) {
+                    > .rn-editor-container:nth-of-type(2):not([data-rem-container-tags*="tree"]) {
                         display: flex;
                         flex-direction: column;
                         position: relative;
