@@ -46,7 +46,7 @@
         display: block;
         animation: cloud 0.125s;
     }
-    [data-rem-container-property~="aliases"] {
+    [data-rem-container-property~="aliases"]:not(.spacedRepetition [data-rem-container-property~="aliases"]) {
         border-radius: 4px;
         background-color: $alias-bg;
         box-shadow: $alias-shadow;
