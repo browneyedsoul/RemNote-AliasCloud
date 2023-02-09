@@ -43,24 +43,30 @@
         color: $ref-text;
     }
     .tree-node--parent:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
-        display: block;
+        display: block !important;
         animation: cloud 0.125s;
+    }
+    [data-rem-container-tags*="table"] {
+        [data-rem-container-property~="aliases"]:not(.spacedRepetition [data-rem-container-property~="aliases"]) {
+            width: unset !important;
+            display: none !important;
+        }
     }
     [data-rem-container-property~="aliases"]:not(.spacedRepetition [data-rem-container-property~="aliases"]) {
         border-radius: 4px;
-        background-color: $alias-bg;
+        background-color: $alias-bg !important;
         box-shadow: $alias-shadow;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         opacity: 0.9;
         display: none;
         .absolute.pointer-events-none.select-none {
            color: transparent;
         }
         &:has(span.rem-container--focused) {
-            display: block;
+            display: block !important;
         }
 
         [data-rem-property~="aliases"] {
