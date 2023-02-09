@@ -43,10 +43,22 @@
         color: $ref-text;
     }
     .tree-node--parent:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
-        display: block !important;
+        display: flex !important;
         animation: cloud 0.125s;
     }
     [data-rem-container-tags*="table"] {
+        .tree-node--parent:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
+            display: flex !important;
+            animation: cloud 0.125s;
+            > .tree-node--parent {
+                width: unset !important;
+            }
+            > .tree-node--children {
+                > .rn-editor-container {
+                    background-color: unset !important;
+                }
+            }
+        }
         [data-rem-container-property~="aliases"]:not(.spacedRepetition [data-rem-container-property~="aliases"]) {
             width: unset !important;
             display: none !important;
