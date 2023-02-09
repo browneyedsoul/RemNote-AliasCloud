@@ -6,8 +6,8 @@
   "repoUrl": "https://github.com/browneyedsoul/RemNote-AliasCloud",
   "version": {
     "major": 0,
-    "minor": 3,
-    "patch": 4
+    "minor": 4,
+    "patch": 0
   },
   "theme": [],
   "enableOnMobile": true,
@@ -16,7 +16,7 @@
   "requiredScopes": [
     {
       "type": "All",
-      "level": "Read"
+      "level": "ReadCreateModify"
     }
   ]
 }
