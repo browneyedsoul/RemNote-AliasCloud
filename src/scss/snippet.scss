@@ -94,6 +94,12 @@
             display: inline-flex;
             align-items: center;
         }
+        .rn-editor__rem__body__text {
+            > .w-full {
+                display: flex;
+                align-items: baseline;
+            }
+        }
 
         > .tree-node--children {
             padding: 0 0.7rem 0.7rem 0.7rem;
@@ -101,6 +107,7 @@
                 .tree-node--parent {
                     [data-rem-tags~="list-item"] {
                         .rem-text {
+                            align-items: baseline;
                             span.rem-powerup-icon {
                                 .text-icon {
                                     top: .2rem;
