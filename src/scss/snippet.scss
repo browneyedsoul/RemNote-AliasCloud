@@ -42,9 +42,12 @@
     .work-in-progress-rem {
         color: $ref-text;
     }
-    .tree-node--parent:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
-        display: flex !important;
-        animation: cloud 0.125s;
+    .tree-node--parent {
+        &:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
+            display: flex !important;
+            flex-direction: column !important;
+            animation: cloud 0.125s;
+        }
     }
     [data-rem-container-tags*="table"] {
         .tree-node--parent:has(span.rem-container--focused) ~ .tree-node--children > [data-rem-container-property~=aliases] {
@@ -64,6 +67,18 @@
             display: none !important;
         }
     }
+    #hierarchy-editor-inner {
+        > .rn-editor-container {
+            > div {
+                .rn-editor-container:not([data-rem-container-id]) {
+                    + [data-rem-container-property~="aliases"] {
+                        display: flex !important;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
     [data-rem-container-property~="aliases"] {
         display: flex;
         flex-direction: column;
@@ -75,9 +90,9 @@
             margin-right: 0.5rem;
             margin-bottom: 1rem;
             position: absolute;
-            z-index: 2;
+            z-index: 10;
             opacity: 0.9;
-            display: none;
+            display: none !important;
             .absolute.pointer-events-none.select-none {
             color: transparent;
             }
@@ -119,6 +134,34 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+            // for rem-tree
+            div.tree-node--parent {
+                background-color: unset !important;
+                > .rem {
+                    background-color: unset !important;
+                }
+            }
+            div.tree-node--children {
+                div.tree-node--parent {
+                    background-color: unset !important;
+                }
+                .rem {
+                    background-color: unset !important;
+                }
+                &::before {
+                    background-color: unset !important;
+                    border-left: unset !important;
+                }
+                &::after {
+                    background-color: unset !important;
+                    border-left: unset !important;
+                }
+                div.tree-node--parent {
+                    &::before {
+                        background-color: unset !important;
                     }
                 }
             }
