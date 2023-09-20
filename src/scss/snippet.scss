@@ -71,7 +71,7 @@
         > .rn-editor-container {
             > div {
                 .rn-editor-container:not([data-rem-container-id]) {
-                    + [data-rem-container-property~="aliases"] {
+                    ~ [data-rem-container-property~="aliases"] {
                         display: flex !important;
                         position: relative;
                     }
