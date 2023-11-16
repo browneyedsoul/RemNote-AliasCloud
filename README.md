@@ -1,5 +1,7 @@
 # Alias Cloud
 
+🚧 It has now become an officially supported feature. Enjoy!
+
 ## What is this?
 
 - People who suffer from distraction caused by aliases can benefit from it
